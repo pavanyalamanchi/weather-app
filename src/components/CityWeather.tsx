@@ -23,7 +23,7 @@ const CityWeather = ({search}:CityWeatherProps) => {
             }
         } 
         fetchData()
-    },[])
+    },[search])
 
     const kelvinToFarenheit = (k: any) => {
         return (k - 273.15).toFixed(2);
@@ -32,7 +32,7 @@ const CityWeather = ({search}:CityWeatherProps) => {
     return(
         <div className='mt-5'>
             <h2>
-                {search} City Weather
+                {search} Weather
                 {console.log(weatherData)}
             </h2>
             <TiWeatherPartlySunny/>
