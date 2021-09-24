@@ -1,5 +1,5 @@
 import {Form, Button} from 'react-bootstrap'
-import {useState, ChangeEvent} from 'react'
+import {useState} from 'react'
 import CityWeather from './CityWeather'
 import {RouteComponentProps} from 'react-router-dom'
 
